@@ -1,14 +1,14 @@
-import Form from './components/Form';
-import { useState } from 'react';
-import axios from 'axios';
-import Recipe from './components/Recipe';
+import Form from "./components/Form";
+import { useState } from "react";
+import axios from "axios";
+import Recipe from "./components/Recipe";
 
-import './App.css';
+import "./App.css";
 
-const uri = 'https://jsonplaceholder.typicode.com/posts';
+const uri = "https://jsonplaceholder.typicode.com/posts";
 
 function App() {
-  const [foodname, setFoodName] = useState('any');
+  const [foodname, setFoodName] = useState("any");
   const [foodList, setFoodList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Tools</header>
+      <header className="App-header">software</header>
       <section>
         <Form searchFood={searchFood} />
         <Recipe foodList={foodList} isLoading={isLoading} />
