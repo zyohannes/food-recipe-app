@@ -1,11 +1,12 @@
-import "./App.css";
-import Form from "./components/Form";
-import { useState } from "react";
-import axios from "axios";
-const uri = "https://jsonplaceholder.typicode.com/posts";
+import './App.css';
+import Form from './components/Form';
+import { useState } from 'react';
+import axios from 'axios';
+import Recipe from './components/Recipe';
+const uri = 'https://jsonplaceholder.typicode.com/posts';
 
 function App() {
-  const [foodname, setFoodName] = useState("any");
+  const [foodname, setFoodName] = useState('any');
   const [foodList, setFoodList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const searchFood = async (e) => {
@@ -29,6 +30,7 @@ function App() {
       <header className="App-header">Tools</header>
       <section>
         <Form searchFood={searchFood} />
+        <Recipe foodList={foodList} isLoading={isLoading} />
       </section>
     </div>
   );
