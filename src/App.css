@@ -99,7 +99,8 @@ button:focus {
   margin-left: 0.7rem;
 }
 
-input[type="text"] {
+
+input[type='text'] {
   outline: none;
 }
 
