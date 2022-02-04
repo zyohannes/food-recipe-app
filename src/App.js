@@ -35,7 +35,7 @@ function App() {
       <section>
         <Form searchFood={searchFood} />
         {/* <Recipe foodList={foodList} isLoading={isLoading} /> */}
-        <Details />
+        <Details foodname={foodname} />
       </section>
     </div>
   );
