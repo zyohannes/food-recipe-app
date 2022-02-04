@@ -1,14 +1,17 @@
-import './App.css';
 import Form from './components/Form';
 import { useState } from 'react';
 import axios from 'axios';
 import Recipe from './components/Recipe';
+
+import './App.css';
+
 const uri = 'https://jsonplaceholder.typicode.com/posts';
 
 function App() {
   const [foodname, setFoodName] = useState('any');
   const [foodList, setFoodList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
   const searchFood = async (e) => {
     e.preventDefault();
     const foodNameValue = e.target.elements.foodName.value;
