@@ -4,6 +4,7 @@ import axios from 'axios';
 import Recipe from './components/Recipe';
 
 import './App.css';
+import Details from './components/Details';
 
 const uri = 'https://jsonplaceholder.typicode.com/posts';
 
@@ -30,10 +31,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Tools</header>
+      <header className="App-header">SETP-Github-Project</header>
       <section>
         <Form searchFood={searchFood} />
-        <Recipe foodList={foodList} isLoading={isLoading} />
+        {/* <Recipe foodList={foodList} isLoading={isLoading} /> */}
+        <Details />
       </section>
     </div>
   );
