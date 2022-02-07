@@ -4,8 +4,8 @@ import axios from 'axios';
 import Recipe from './components/Recipe';
 
 import './App.css';
-
-const uri = 'https://jsonplaceholder.typicode.com/posts';
+import Details from './components/Details';
+import { uri } from './services/service';
 
 function App() {
   const [foodname, setFoodName] = useState('any');
@@ -30,10 +30,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Tools</header>
+      <header className="App-header">SETP-Github-Project</header>
+
       <section>
         <Form searchFood={searchFood} />
         <Recipe foodList={foodList} isLoading={isLoading} />
+        {/* <Details foodname={foodname} /> */}
       </section>
     </div>
   );

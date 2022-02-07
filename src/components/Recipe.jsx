@@ -1,5 +1,5 @@
 import { BallTriangle } from 'react-loader-spinner';
-import './Recipe.css';
+import './styles/Recipe.css';
 
 function Recipe(props) {
   const { foodList, isLoading } = props;
